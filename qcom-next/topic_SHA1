@@ -1,0 +1,21 @@
+Name                                  SHA                                  Commits
+------------------------------------------------------------------------------------
+tech/bsp/clk              0f0f443aadd40642a918cef14fb34d0ec2f34e61         22
+tech/bus/peripherals      53fe073a397c07022f557f580f5a15a973a3fa65         11
+tech/bus/pci/all          5159ecf66111209bb6561b6897edb53ada242ca1          8
+tech/bus/pci/pwrctl       c387c06e97b117087e11f3ccc43ec75233a15e29          7
+tech/debug/eud            3ceb84655f5573c9b4350480162ee0b4f8e334d9          1
+tech/debug/hwtracing      b2d866d8210cc8630890b0b41dfe1cb209a61c73         12
+tech/mm/audio/all         e64ff613e5ab7156a4262ac1c4b482f44a2cf2d3          2
+tech/mm/drm               7c42242f76761d3fd7ecbe99a1a8036908906093          1
+tech/mm/fastrpc           5a94c05e12cbc5cecb3a039d67c51bd8aff0ecec          5
+tech/mm/video             a07d5dadf6e17aa251fbe11b730df1c94b991315         52
+tech/mproc/rpmsg          adf3d0ae30d0e39e7db861824b705b7f7a3040bc          1
+tech/net/eth              024f8b03b23ff8733ab7542ab4b4408ceffe4200          3
+tech/net/bluetooth        d8ebb91910acbb11e0fa480b4b0c3ae0b918c795          2
+tech/pm/power             50ba591204a720328c28d6d21c22e3aba813b9de          5
+tech/all/dt/qcs6490       aa2dcb1160728fe8cea62cd42484f74cdd017865         14
+tech/all/dt/qcs9100       0a879ce41cb24833fc32859c081982c5a197f07e         11
+tech/all/dt/qcs8300       9cf5b6cb634e683037ad26e2df1c180c867a022f          4
+tech/all/dt/qcs615        10ac7bee76361528d819d61637964c196f99706e         16
+tech/all/config           23e1f779d383855e6e7aae5b4db667c347cf276d          3
