@@ -942,6 +942,7 @@ properties:
 
       - items:
           - enum:
+              - qcom,monaco-evk
               - qcom,qcs8300-ride
           - const: qcom,qcs8300
 
@@ -969,6 +970,7 @@ properties:
 
       - items:
           - enum:
+              - qcom,lemans-evk
               - qcom,qcs9100-ride
               - qcom,qcs9100-ride-r3
           - const: qcom,qcs9100
@@ -1154,6 +1156,12 @@ properties:
               - microsoft,romulus15
               - qcom,x1e80100-crd
               - qcom,x1e80100-qcp
+          - const: qcom,x1e80100
+
+      - items:
+          - enum:
+              - qcom,hamoa-iot-evk
+          - const: qcom,hamoa-iot-som
           - const: qcom,x1e80100
 
       - items:
