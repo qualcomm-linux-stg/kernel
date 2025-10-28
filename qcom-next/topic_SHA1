@@ -1,0 +1,23 @@
+Name                                  SHA                                  Commits
+------------------------------------------------------------------------------------
+tech/bsp/soc-infra        fb9893554a5c226bb918e2f83339d801ca0ea3dc          2
+tech/bsp/pinctrl          31abea7a984df4610a317583f037b5d32479a33a          1
+tech/bsp/remoteproc       806913442c1fd5fc6195a904f574a334df280b80         12
+tech/bus/pci/all          c26b0ea4cb7b25554d943449bb45a0d1c6bf7ac5          1
+tech/bus/pci/pwrctl       b2c1ca91ba4850410b2200733cf072ff651d1a0c          7
+tech/debug/eud            eb36d9dbce445b0a2032775a5668ba02dd4b67cb          1
+tech/debug/hwtracing      04dc51a54f8fa67a3c10e525fce59a076303fee2         13
+tech/mm/audio/all         553419127a35c4d857a1d9a6fe68c2b4d23cac48          2
+tech/mm/camss             aefdaf1da39e9d68b4e448f08efe09ba1a4b3289          2
+tech/mm/drm               69cdd9f639a7f057572091ab55774167f1f23826          5
+tech/mm/fastrpc           dba4eb255febb4cc38d2e340978c58f8f21ff6cc          3
+tech/mm/gpu               d62e8b28f3b8c7e87ab229c558fd205288fa8497          5
+tech/net/bluetooth        b5902f2daf61ad3eed61a9fbf3d75ba3748cf53e          2
+tech/pm/power             dbdf5492a4e4b90f6777946d17917475f8e8e081          6
+tech/security/ice         9a1a01d93933c1a68f51c904fc0c4a3d3a0aa865          1
+tech/all/workaround       335e9bfce802c13f8564bd241f1405bc450731f8          1
+tech/all/dt/qcs6490       90671a19c6c95f4acd18702dde28e82212cfd5d5          4
+tech/all/dt/qcs9100       b87798a84a4eafe5f2ace612c1f3ccd5e153cb49          7
+tech/all/dt/qcs8300       1b489cae41db2c9d9660ca43bddab462d3b92440         10
+tech/all/dt/qcs615        b879f8a11b8ec146249e66e98499769873d5711b          4
+tech/all/config           d39f17efd819d16649caa1a6359c140b30f15cc7          6

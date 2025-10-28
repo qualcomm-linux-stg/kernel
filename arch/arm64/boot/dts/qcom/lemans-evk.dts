@@ -453,6 +453,14 @@
 	status = "okay";
 };
 
+&gpu {
+	status = "okay";
+};
+
+&gpu_zap_shader {
+	firmware-name = "qcom/sa8775p/a663_zap.mbn";
+};
+
 &i2c18 {
 	status = "okay";
 
@@ -585,6 +593,13 @@
 	vdda-pll-supply = <&vreg_l1c>;
 
 	status = "okay";
+};
+
+&psci {
+	reboot-mode {
+		mode-bootloader = <0x10001 0x2>;
+		mode-edl = <0 0x1>;
+	};
 };
 
 &qupv3_id_0 {
