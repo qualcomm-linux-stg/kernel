@@ -90,9 +90,6 @@ struct fc_bsg_host_add_rport {
  */
 struct fc_bsg_host_del_rport {
 	__u8	reserved;
-
-	/* FC Address Identier of the remote port to logout of */
-	__u8	port_id[3];
 };
 
 /* Response:
