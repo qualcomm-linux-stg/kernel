@@ -84,8 +84,6 @@ enum {
 	RX_READ,	/* read properties of RX content filter subscription */
 	TX_STATUS,	/* reply to TX_READ request */
 	TX_EXPIRED,	/* notification on performed transmissions (count=0) */
-	RX_STATUS,	/* reply to RX_READ request */
-	RX_TIMEOUT,	/* cyclic message is absent */
 	RX_CHANGED,	/* updated CAN frame (detected content change) */
         TEST
 };
