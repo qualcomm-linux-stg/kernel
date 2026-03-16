@@ -68,16 +68,6 @@ enum {
 	CAN_RAW_XL_VCID_OPTS,	/* CAN XL VCID configuration options */
 };
 
-/* configuration for CAN XL virtual CAN identifier (VCID) handling */
-struct can_raw_vcid_options {
-
-	__u8 flags;		/* flags for vcid (filter) behaviour */
-	__u8 tx_vcid;		/* VCID value set into canxl_frame.prio */
-	__u8 rx_vcid;		/* VCID value for VCID filter */
-	__u8 rx_vcid_mask;	/* VCID mask for VCID filter */
-
-};
-
 /* can_raw_vcid_options.flags for CAN XL virtual CAN identifier handling */
 #define CAN_RAW_XL_VCID_TX_SET		0x01
 #define CAN_RAW_XL_VCID_TX_PASS		0x02
