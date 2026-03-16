@@ -18,11 +18,6 @@
 /* uic commands are 4DW long, per UFSHCI V2.1 paragraph 5.6.1 */
 #define UIC_CMD_SIZE (sizeof(__u32) * 4)
 
-enum ufs_bsg_msg_code {
-	UPIU_TRANSACTION_UIC_CMD = 0x1F,
-	UPIU_TRANSACTION_ARPMB_CMD,
-};
-
 /* UFS RPMB Request Message Types */
 enum ufs_rpmb_op_type {
 	UFS_RPMB_WRITE_KEY		= 0x01,
