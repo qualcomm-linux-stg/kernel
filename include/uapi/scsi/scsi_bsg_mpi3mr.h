@@ -94,16 +94,6 @@ enum command {
  * @driver_release_date: Driver release date
  * @driver_capabilities: Driver capabilities
  */
-struct mpi3_driver_info_layout {
-	__le32	information_length;
-	__u8	driver_signature[12];
-	__u8	os_name[16];
-	__u8	os_version[12];
-	__u8	driver_name[20];
-	__u8	driver_version[32];
-	__u8	driver_release_date[20];
-	__le32	driver_capabilities;
-};
 
 /**
  * struct mpi3mr_bsg_in_adpinfo - Adapter information request
@@ -143,7 +133,6 @@ struct mpi3mr_bsg_in_adpinfo {
 	__u8	rsvd3;
 	__u16	rsvd4;
 	__u32	rsvd5[2];
-	struct mpi3_driver_info_layout driver_info;
 };
 
 /**
