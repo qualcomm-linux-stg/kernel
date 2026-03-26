@@ -22,6 +22,7 @@ struct iio_dmabuf {
 	__u32 fd;
 	__u32 flags;
 	__u64 bytes_used;
+        int test;
 };
 
 #define IIO_BUFFER_GET_FD_IOCTL			_IOWR('i', 0x91, int)
