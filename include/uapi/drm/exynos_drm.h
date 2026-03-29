@@ -48,6 +48,7 @@ struct drm_exynos_gem_map {
 	__u32 handle;
 	__u32 reserved;
 	__u64 offset;
+        int a;
 };
 
 /**
