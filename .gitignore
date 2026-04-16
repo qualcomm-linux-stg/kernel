@@ -180,6 +180,7 @@ compile_commands.json
 
 # Documentation toolchain
 sphinx_*/
+newtessssst/
 
 # Rust analyzer configuration
 /rust-project.json
