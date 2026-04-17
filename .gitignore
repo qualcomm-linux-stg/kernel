@@ -182,5 +182,7 @@ compile_commands.json
 sphinx_*/
 newtessssst/
 hellooooo/
+
+
 # Rust analyzer configuration
 /rust-project.json
