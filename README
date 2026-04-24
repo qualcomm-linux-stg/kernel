@@ -144,8 +144,6 @@ Package and distribute the kernel:
 * Kernel Parameters: Documentation/admin-guide/kernel-parameters.rst
 * Tainted Kernels: Documentation/admin-guide/tainted-kernels.rst
 
-
-
 Communication and Support
 =========================
 
@@ -154,3 +152,6 @@ Communication and Support
 * Bugzilla: https://bugzilla.kernel.org/
 * MAINTAINERS file: Lists subsystem maintainers and mailing lists
 * Email Clients: Documentation/process/email-clients.rst
+
+
+
