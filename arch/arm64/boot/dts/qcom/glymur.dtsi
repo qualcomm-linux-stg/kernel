@@ -27,7 +27,7 @@
 
 #include "glymur-ipcc.h"
 
-/ {
+
 	interrupt-parent = <&intc>;
 	#address-cells = <2>;
 	#size-cells = <2>;
