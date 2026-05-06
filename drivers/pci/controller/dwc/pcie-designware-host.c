@@ -1106,6 +1106,16 @@ int dw_pcie_setup_rc(struct dw_pcie_rp *pp)
 
 	dw_pcie_dbi_ro_wr_dis(pci);
 
+	/*
+	 * If iMSI-RX module is used as the MSI controller, remove MSI and
+	 * MSI-X capabilities from PCIe Root Ports to ensure fallback to INTx
+	 * interrupt handling.
+	 */
+	if (pp->has_msi_ctrl) {
+		dw_pcie_remove_capability(pci, PCI_CAP_ID_MSI);
+		dw_pcie_remove_capability(pci, PCI_CAP_ID_MSIX);
+	}
+
 	return 0;
 }
 EXPORT_SYMBOL_GPL(dw_pcie_setup_rc);
@@ -1156,6 +1166,8 @@ int dw_pcie_suspend_noirq(struct dw_pcie *pci)
 
 	if (!pci_host_common_can_enter_d3cold(pci->pp.bridge))
 		return 0;
+
+	pci->pp.skip_pwrctrl_off = true;
 
 	if (pci->pp.ops->pme_turn_off) {
 		pci->pp.ops->pme_turn_off(&pci->pp);
@@ -1212,6 +1224,7 @@ int dw_pcie_resume_noirq(struct dw_pcie *pci)
 		return 0;
 
 	pci->suspended = false;
+	pci->pp.skip_pwrctrl_off = false;
 
 	if (pci->pp.ops->init) {
 		ret = pci->pp.ops->init(&pci->pp);
