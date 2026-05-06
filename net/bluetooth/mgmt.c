@@ -560,7 +560,7 @@ static int read_ext_index_list(struct sock *sk, struct hci_dev *hdev,
 	list_for_each_entry(d, &hci_dev_list, list)
 		count++;
 
-	rp = kmalloc(struct_size(rp, entry, count), GFP_ATOMIC);
+	rp = kmalloc_flex(*rp, entry, count, GFP_ATOMIC);
 	if (!rp) {
 		read_unlock(&hci_dev_list_lock);
 		return -ENOMEM;
@@ -848,6 +848,12 @@ static u32 get_supported_settings(struct hci_dev *hdev)
 
 	if (cis_peripheral_capable(hdev))
 		settings |= MGMT_SETTING_CIS_PERIPHERAL;
+
+	if (bis_capable(hdev))
+		settings |= MGMT_SETTING_ISO_BROADCASTER;
+
+	if (sync_recv_capable(hdev))
+		settings |= MGMT_SETTING_ISO_SYNC_RECEIVER;
 
 	if (ll_privacy_capable(hdev))
 		settings |= MGMT_SETTING_LL_PRIVACY;
@@ -1960,6 +1966,7 @@ static void set_ssp_complete(struct hci_dev *hdev, void *data, int err)
 		}
 
 		mgmt_cmd_status(cmd->sk, cmd->hdev->id, cmd->opcode, mgmt_err);
+		mgmt_pending_free(cmd);
 		return;
 	}
 
@@ -1978,6 +1985,7 @@ static void set_ssp_complete(struct hci_dev *hdev, void *data, int err)
 		sock_put(match.sk);
 
 	hci_update_eir_sync(hdev);
+	mgmt_pending_free(cmd);
 }
 
 static int set_ssp_sync(struct hci_dev *hdev, void *data)
@@ -2187,10 +2195,7 @@ static void set_mesh_complete(struct hci_dev *hdev, void *data, int err)
 	sk = cmd->sk;
 
 	if (status) {
-		mgmt_cmd_status(cmd->sk, hdev->id, MGMT_OP_SET_MESH_RECEIVER,
-				status);
-		mgmt_pending_foreach(MGMT_OP_SET_MESH_RECEIVER, hdev, true,
-				     cmd_status_rsp, &status);
+		mgmt_cmd_status(cmd->sk, hdev->id, cmd->opcode, status);
 		goto done;
 	}
 
@@ -2759,7 +2764,7 @@ static int add_uuid(struct sock *sk, struct hci_dev *hdev, void *data, u16 len)
 		goto failed;
 	}
 
-	uuid = kmalloc(sizeof(*uuid), GFP_KERNEL);
+	uuid = kmalloc_obj(*uuid);
 	if (!uuid) {
 		err = -ENOMEM;
 		goto failed;
@@ -3352,7 +3357,7 @@ static int get_connections(struct sock *sk, struct hci_dev *hdev, void *data,
 			i++;
 	}
 
-	rp = kmalloc(struct_size(rp, addr, i), GFP_KERNEL);
+	rp = kmalloc_flex(*rp, addr, i);
 	if (!rp) {
 		err = -ENOMEM;
 		goto unlock;
@@ -4369,7 +4374,7 @@ static int set_blocked_keys(struct sock *sk, struct hci_dev *hdev, void *data,
 	hci_blocked_keys_clear(hdev);
 
 	for (i = 0; i < key_count; ++i) {
-		struct blocked_key *b = kzalloc(sizeof(*b), GFP_KERNEL);
+		struct blocked_key *b = kzalloc_obj(*b);
 
 		if (!b) {
 			err = MGMT_STATUS_NO_RESOURCES;
@@ -5369,7 +5374,7 @@ static void mgmt_add_adv_patterns_monitor_complete(struct hci_dev *hdev,
 
 	mgmt_cmd_complete(cmd->sk, cmd->hdev->id, cmd->opcode,
 			  mgmt_status(status), &rp, sizeof(rp));
-	mgmt_pending_remove(cmd);
+	mgmt_pending_free(cmd);
 
 	hci_dev_unlock(hdev);
 	bt_dev_dbg(hdev, "add monitor %d complete, status %d",
@@ -5482,7 +5487,7 @@ static u8 parse_adv_monitor_pattern(struct adv_monitor *m, u8 pattern_count,
 		    (offset + length) > HCI_MAX_AD_LENGTH)
 			return MGMT_STATUS_INVALID_PARAMS;
 
-		p = kmalloc(sizeof(*p), GFP_KERNEL);
+		p = kmalloc_obj(*p);
 		if (!p)
 			return MGMT_STATUS_NO_RESOURCES;
 
@@ -5519,7 +5524,7 @@ static int add_adv_patterns_monitor(struct sock *sk, struct hci_dev *hdev,
 		goto done;
 	}
 
-	m = kzalloc(sizeof(*m), GFP_KERNEL);
+	m = kzalloc_obj(*m);
 	if (!m) {
 		status = MGMT_STATUS_NO_RESOURCES;
 		goto done;
@@ -5556,7 +5561,7 @@ static int add_adv_patterns_monitor_rssi(struct sock *sk, struct hci_dev *hdev,
 		goto done;
 	}
 
-	m = kzalloc(sizeof(*m), GFP_KERNEL);
+	m = kzalloc_obj(*m);
 	if (!m) {
 		status = MGMT_STATUS_NO_RESOURCES;
 		goto done;
@@ -6432,6 +6437,7 @@ static void set_advertising_complete(struct hci_dev *hdev, void *data, int err)
 		hci_dev_clear_flag(hdev, HCI_ADVERTISING);
 
 	settings_rsp(cmd, &match);
+	mgmt_pending_free(cmd);
 
 	new_settings(hdev, match.sk);
 
