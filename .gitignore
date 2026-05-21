@@ -8,6 +8,7 @@
 # command after changing this file, to see if there are
 # any tracked files which get ignored after the change.
 #
+
 # Normal rules (sorted alphabetically)
 #
 .*
@@ -180,6 +181,8 @@ compile_commands.json
 
 # Documentation toolchain
 sphinx_*/
+newtessssst/
+
 
 # Rust analyzer configuration
 /rust-project.json
