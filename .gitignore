@@ -9,7 +9,7 @@
 # any tracked files which get ignored after the change.
 #
 # Normal rules (sorted alphabetically)
-#
+# Test2
 .*
 *.a
 *.asn1.[ch]
