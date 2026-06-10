@@ -184,3 +184,8 @@ sphinx_*/
 
 # Rust analyzer configuration
 /rust-project.json
+
+#vscode settings
+/.vscode
+
+/.log
