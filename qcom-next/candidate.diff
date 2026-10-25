@@ -1,0 +1,316 @@
+# qcom-next updated topics
+# Published qcom-next: unavailable
+# Candidate qcom-next: 95855cb282f7332edf616fb93beed0b1da5f3dc4
+
+Topic: early/hwe/nord
+Branch: early/hwe/nord
+Tag: early/hwe/nord-7.3-rc6-20261024
+Old SHA: 
+New SHA: 9d5b3c8bfaff6f9f913fdf01da068d2806a0ea6a
+
+Topic: early/hwe/staging/nord
+Branch: early/hwe/staging/nord
+Tag: early/hwe/staging/nord-7.3-rc6-20261024
+Old SHA: 
+New SHA: b84ee153050a24411f1e3d1d082886e4dc97c682
+
+Topic: tech/all/config
+Branch: tech/all/config
+Tag: tech/all/config-7.3-rc1-20261024
+Old SHA: 
+New SHA: 4dfbba1f146c0e2efd80f200c7d04957d168f1ca
+
+Topic: tech/all/dt/agatti
+Branch: tech/all/dt/agatti
+Tag: tech/all/dt/agatti-6.19-rc8-20261024
+Old SHA: 
+New SHA: 2ca1b63b35a7e70a4a80398286211dee17729739
+
+Topic: tech/all/dt/eliza
+Branch: tech/all/dt/eliza
+Tag: tech/all/dt/eliza-7.3-rc2-20261024
+Old SHA: 
+New SHA: fd76dfcc600a56ed9bc6d4f1b5d3e5d26238a767
+
+Topic: tech/all/dt/glymur
+Branch: tech/all/dt/glymur
+Tag: tech/all/dt/glymur-7.3-rc2-20261024
+Old SHA: 
+New SHA: a619ea6bd88bc2938ad9eadd3bff6df886f456c3
+
+Topic: tech/all/dt/hamoa
+Branch: tech/all/dt/hamoa
+Tag: tech/all/dt/hamoa-7.3-rc6-20261024
+Old SHA: 
+New SHA: 7cdc1c1717ef2f890b5c1272d0822714942d4f52
+
+Topic: tech/all/dt/kaanapali
+Branch: tech/all/dt/kaanapali
+Tag: tech/all/dt/kaanapali-7.3-rc1-20261024
+Old SHA: 
+New SHA: b395c116269253fd3bf457e69cdc734077358900
+
+Topic: tech/all/dt/pakala
+Branch: tech/all/dt/pakala
+Tag: tech/all/dt/pakala-7.3-rc1-20261024
+Old SHA: 
+New SHA: 9cdd195c9736e629a1051563b7eae5ca38e22c66
+
+Topic: tech/all/dt/qcs615
+Branch: tech/all/dt/qcs615
+Tag: tech/all/dt/qcs615-7.3-rc1-20261024
+Old SHA: 
+New SHA: 4bc8635623a5bb44afd03203ffa1c8759c58bae6
+
+Topic: tech/all/dt/qcs6490
+Branch: tech/all/dt/qcs6490
+Tag: tech/all/dt/qcs6490-7.3-rc1-20261024
+Old SHA: 
+New SHA: fdf8383bd714781dfce69bc0755844fe85389788
+
+Topic: tech/all/dt/qcs8300
+Branch: tech/all/dt/qcs8300
+Tag: tech/all/dt/qcs8300-7.3-rc1-20261024
+Old SHA: 
+New SHA: 6a513e3822028da35889d58dd755152132440a6b
+
+Topic: tech/all/dt/qcs9100
+Branch: tech/all/dt/qcs9100
+Tag: tech/all/dt/qcs9100-7.3-rc1-20261024
+Old SHA: 
+New SHA: df4f38e0ebf7edc26b43cce23131f7181cc557f2
+
+Topic: tech/all/hawi
+Branch: tech/all/hawi
+Tag: tech/all/hawi-7.3-rc4-20261024
+Old SHA: 
+New SHA: 17d1dc3ec4d9bc10af1e075c960d45187a36c388
+
+Topic: tech/all/maili
+Branch: tech/all/maili
+Tag: tech/all/maili-7.3-rc5-20261024
+Old SHA: 
+New SHA: c7b7e74ca9e881487a53c7e9ad18e0a9f428bbee
+
+Topic: tech/all/shikra
+Branch: tech/all/shikra
+Tag: tech/all/shikra-7.3-rc2-20261024
+Old SHA: 
+New SHA: fc6960a53c6db10c98094d9a050e1a4719ac7d07
+
+Topic: tech/all/workaround
+Branch: tech/all/workaround
+Tag: tech/all/workaround-7.2-rc1-20261024
+Old SHA: 
+New SHA: ebc94067be183f4418b5f496e269d6eb11723bcb
+
+Topic: tech/bsp/clk
+Branch: tech/bsp/clk
+Tag: tech/bsp/clk-7.3-rc1-20261024
+Old SHA: 
+New SHA: 8fbbeee4302f246ab9bd3ddc44fcb78c1cc4a4a5
+
+Topic: tech/bsp/devfreq
+Branch: tech/bsp/devfreq
+Tag: tech/bsp/devfreq-7.3-rc2-20261024
+Old SHA: 
+New SHA: 0837ca4afab5ff6397284116dfad794b0b7884d5
+
+Topic: tech/bsp/interconnect
+Branch: tech/bsp/interconnect
+Tag: tech/bsp/interconnect-7.3-rc2-20261024
+Old SHA: 
+New SHA: 81fc6e2c356d01f1606ae1323b1b1ef3b6db0ad2
+
+Topic: tech/bsp/pinctrl
+Branch: tech/bsp/pinctrl
+Tag: tech/bsp/pinctrl-7.2-rc1-20261024
+Old SHA: 
+New SHA: 79149ef6a826d6237346aa74eca65ccbe19d761f
+
+Topic: tech/bsp/remoteproc
+Branch: tech/bsp/remoteproc
+Tag: tech/bsp/remoteproc-7.3-rc1-20261024
+Old SHA: 
+New SHA: 8c716bcd0b5eca15711a114434340d2f89cbf4d1
+
+Topic: tech/bsp/sched
+Branch: tech/bsp/sched
+Tag: tech/bsp/sched-7.3-rc6-20261024
+Old SHA: 
+New SHA: 2cb2e1893260e8060cbc0510c4fa52cda90947f8
+
+Topic: tech/bsp/soc-infra
+Branch: tech/bsp/soc-infra
+Tag: tech/bsp/soc-infra-7.2-rc1-20261024
+Old SHA: 
+New SHA: 3633b44cc241cc8e03dae3b09be0817c3bac9c4f
+
+Topic: tech/bus/pci/all
+Branch: tech/bus/pci/all
+Tag: tech/bus/pci/all-7.3-rc2-20261024
+Old SHA: 
+New SHA: 9189a067e7b00e8545bd336e8c6bee7064effcbe
+
+Topic: tech/bus/peripherals
+Branch: tech/bus/peripherals
+Tag: tech/bus/peripherals-7.3-rc6-20261024
+Old SHA: 
+New SHA: d69a417c1c2b93a0c7c174a2d1cab0da18dbad64
+
+Topic: tech/bus/usb/dwc
+Branch: tech/bus/usb/dwc
+Tag: tech/bus/usb/dwc-7.2-rc1-20261024
+Old SHA: 
+New SHA: 6f2460005b7a8909fcc9668e9abcf76050d6198e
+
+Topic: tech/bus/usb/phy
+Branch: tech/bus/usb/phy
+Tag: tech/bus/usb/phy-7.2-rc1-20261024
+Old SHA: 
+New SHA: b94824df2da48cbe95cc99a0fdd2bd309605f79e
+
+Topic: tech/debug/hwtracing
+Branch: tech/debug/hwtracing
+Tag: tech/debug/hwtracing-7.3-rc2-20261024
+Old SHA: 
+New SHA: fae0f798a947b7949522d5657e4b40a1cc92b12c
+
+Topic: tech/hwe/unoq
+Branch: tech/hwe/unoq
+Tag: tech/hwe/unoq-7.2-rc1-20261024
+Old SHA: 
+New SHA: a2d85fe547167dbd8fc59618907c20a6f17d2e5a
+
+Topic: tech/mem/dma-buf
+Branch: tech/mem/dma-buf
+Tag: tech/mem/dma-buf-7.3-rc4-20261024
+Old SHA: 
+New SHA: f153776ee5585e03809e3820c09f2ae8a1ec67d9
+
+Topic: tech/mem/iommu
+Branch: tech/mem/iommu
+Tag: tech/mem/iommu-7.2-rc1-20261024
+Old SHA: 
+New SHA: e1fac89078258e1073934473756910cbb935cc8b
+
+Topic: tech/mm/audio/all
+Branch: tech/mm/audio/all
+Tag: tech/mm/audio/all-7.3-rc4-20261024
+Old SHA: 
+New SHA: 277113f054d74a01cf8e1648aafdc0ea73f562c7
+
+Topic: tech/mm/camss
+Branch: tech/mm/camss
+Tag: tech/mm/camss-7.3-rc1-20261024
+Old SHA: 
+New SHA: dd654943f75e9fc7d01472dab4b351e36663c017
+
+Topic: tech/mm/drm
+Branch: tech/mm/drm
+Tag: tech/mm/drm-7.3-rc4-20261024
+Old SHA: 
+New SHA: 55b9133f9c001c28e82999293e7b748a9f4b916b
+
+Topic: tech/mm/fastrpc
+Branch: tech/mm/fastrpc
+Tag: tech/mm/fastrpc-7.3-rc1-20261024
+Old SHA: 
+New SHA: fab5742543b3ac30feddcc3e21abf5c5367813e3
+
+Topic: tech/mm/gpu
+Branch: tech/mm/gpu
+Tag: tech/mm/gpu-7.3-rc2-20261024
+Old SHA: 
+New SHA: e065d5a06609e29946cba06a8c42b5e084c16e98
+
+Topic: tech/mm/video
+Branch: tech/mm/video
+Tag: tech/mm/video-7.3-rc1-20261024
+Old SHA: 
+New SHA: bbe1a02c8deab96676f5b1d9e0c802eb409854a6
+
+Topic: tech/net/ath
+Branch: tech/net/ath
+Tag: tech/net/ath-7.3-rc2-20261024
+Old SHA: 
+New SHA: 722be84e35d87fe00bb909de896bfdc67bc5a064
+
+Topic: tech/net/bluetooth
+Branch: tech/net/bluetooth
+Tag: tech/net/bluetooth-7.3-rc1-20261024
+Old SHA: 
+New SHA: e352848cad1444a9125ebad6768024cc8a9cc0c4
+
+Topic: tech/net/eth
+Branch: tech/net/eth
+Tag: tech/net/eth-7.3-rc4-20261025
+Old SHA: 
+New SHA: 65af320370b7ba801469f32448cff2c0c19c91ea
+
+Topic: tech/noup/debug/all
+Branch: tech/noup/debug/all
+Tag: tech/noup/debug/all-7.3-rc2-20261024
+Old SHA: 
+New SHA: 9f1e8aefe2eaa112abe0bbb5e9f67284effa3d8d
+
+Topic: tech/overlay/dt
+Branch: tech/overlay/dt
+Tag: tech/overlay/dt-7.3-rc2-20261024
+Old SHA: 
+New SHA: e3a5bec1a541fca07ea6203ef7372d1d775c9a49
+
+Topic: tech/pm/pmdomain
+Branch: tech/pm/pmdomain
+Tag: tech/pm/pmdomain-7.3-rc1-20261024
+Old SHA: 
+New SHA: 16a7451c692b445766f0aef4187677ca93740e54
+
+Topic: tech/pm/power
+Branch: tech/pm/power
+Tag: tech/pm/power-7.3-rc2-20261024
+Old SHA: 
+New SHA: 3faa52e4bb5a411b7ca71ecb52a725a4b67f0685
+
+Topic: tech/pm/thermal
+Branch: tech/pm/thermal
+Tag: tech/pm/thermal-7.3-rc1-20261024
+Old SHA: 
+New SHA: 2602b17df1dab5715e2b1625738e1983a053ad02
+
+Topic: tech/pmic/misc
+Branch: tech/pmic/misc
+Tag: tech/pmic/misc-7.3-rc1-20261024
+Old SHA: 
+New SHA: 0adc32cecb53de9434a1ffaa22af8eacb7e3e2c0
+
+Topic: tech/security/crypto
+Branch: tech/security/crypto
+Tag: tech/security/crypto-7.3-rc2-20261024
+Old SHA: 
+New SHA: 4c71afd9e46a785c7c00563832fb1550503b011c
+
+Topic: tech/security/firmware-smc
+Branch: tech/security/firmware-smc
+Tag: tech/security/firmware-smc-7.3-rc1-20261024
+Old SHA: 
+New SHA: 16b0235a686da585922566fe2aeee447e100fbfd
+
+Topic: tech/security/ice
+Branch: tech/security/ice
+Tag: tech/security/ice-7.2-rc1-20261024
+Old SHA: 
+New SHA: dc34f45bbd867d317614efdfeae9274d6c956454
+
+Topic: tech/security/optee-next
+Branch: tech/security/optee-next
+Tag: tech/security/optee-next-7.3-rc3-20261024
+Old SHA: 
+New SHA: 9babb9ac3b6294a7b1417877627895d62414eaac
+
+Topic: tech/storage/all
+Branch: tech/storage/all
+Tag: tech/storage/all-7.3-rc5-20261024
+Old SHA: 
+New SHA: f2a8c9af405bb5a012b720c3f824920a6d9a158e
+
